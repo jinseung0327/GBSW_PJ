@@ -42,7 +42,7 @@ nav li a:hover {
 
 img {
   width: 65%;
-  margin-top: -1.5rem;
+  margin-top: -2rem;
   margin-left: 17rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -54,4 +54,14 @@ h2 {
   align-items: center;
   font-size: 3rem;
   margin-top: 5%;
+}
+
+p {
+  margin: 5px auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.09rem;
+  text-decoration: underline;
 }

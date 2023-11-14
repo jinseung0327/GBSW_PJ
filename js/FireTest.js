@@ -1,3 +1,5 @@
+"use strict"
+
 document.addEventListener('DOMContentLoaded', function () {
   function handleButtonClick(event) {
     event.preventDefault();
@@ -17,8 +19,21 @@ document.addEventListener('DOMContentLoaded', function () {
   function displayTotalScore() {
     const notification = document.getElementById('notification');
     const notificationMessage = document.getElementById('notification-message');
+    let score = 0;
 
-    const message = "Your Total Score: " + 0; 
+    const answers = ['정답이 아니다 !', '정답이 아니다 !', '정답이 확실하다 !', '정답이 아니다 !', '정답이 아니다 !', '정답이 확실하다 !', '정답이 확실하다 !', '정답이 아니다 !', '정답이 아니다 !', '정답이 확실하다 !'];
+
+    document.querySelectorAll('.choices-group').forEach((group, index) => {
+      const selectedButton = group.querySelector('.btn.selected');
+
+      if (selectedButton) {
+        if (selectedButton.innerText === answers[index]) {
+          score += 10;
+        }
+      }
+    });
+
+    const message = "Your Total Score: " + score;
     notificationMessage.innerText = message;
     notification.style.display = 'block';
   }

@@ -26,7 +26,7 @@ h1 {
   align-items: center;
   color: white;
   font-size: 6rem;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 2px rgb(118, 24, 24);
 }
 
 button {
