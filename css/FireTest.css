@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'YEONGJUPunggiGinsengTTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/YEONGJUPunggiGinsengTTF.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'YEONGJUPunggiGinsengTTF';
+}
+
+a {
+  all: unset;
+}
+
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(108, 167, 219);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 2rem;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin-top: 5%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin: 10px 10px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+nav li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.choices-group {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.choicesForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 7rem;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+input[type="button"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 3rem;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+.sr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submit-btn {
+  display: inline-block;
+  margin: 20px 15px;
+  width: 190px;
+  height: 50px;
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+#reset-btn {
+  display: inline-block;
+  width: 190px;
+  height: 50px;
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+#submit-btn:hover,
+#reset-btn:hover {
+  background-color: rgb(112, 104, 104);
+}
+
+#notification {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+.choicesForm .btn:active {
+  font-weight: bold;
+  /* Make the text bold when the button is clicked/pressed */
+}
+
+.choicesForm .btn:active,
+.choicesForm .btn.selected {
+  font-weight: bold;
+  background-color: #3498db;
+  color: #fff;
+}

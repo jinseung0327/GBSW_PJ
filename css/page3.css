@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'YEONGJUPunggiGinsengTTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/YEONGJUPunggiGinsengTTF.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'YEONGJUPunggiGinsengTTF';
+}
+
+a {
+  all: unset;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(108, 167, 219);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin: 10px 10px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+nav li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+img {
+  width: 65%;
+  margin-top: -1.5rem;
+  margin-left: 17rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin-top: 5%;
+}
